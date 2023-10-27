@@ -25,6 +25,11 @@ const commonPlugins = [
   nodeResolve({ extensions }),
   typescript({
     tsconfig: "./tsconfig.json",
+    exclude: [
+      "src/**/*.spec.(ts|tsx)",
+      "src/**/*.test.(ts|tsx)",
+      "src/**/*.stories.(ts|tsx)",
+    ],
   }),
   prod && terser(),
 ];
