@@ -1,7 +1,10 @@
 import * as React from "react";
 import { render, screen } from "@testing-library/react";
-import { Box } from "../../dist/index.es";
+import Box from "./Box";
 
+/**
+ * Box component - testing
+ */
 describe("Box component", () => {
   it("Load component", () => {
     const text = "Hello World";
